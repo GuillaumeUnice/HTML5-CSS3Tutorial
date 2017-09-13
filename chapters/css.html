@@ -1,0 +1,237 @@
+<section>
+  <h3>CSS3</h3>
+	<img src="images/css3_logo.png" style="border: none;" alt="CSS3 logo" />
+  <p>
+    <a href="//www.cheetyr.com/css-selectors" target="_blank">http://www.cheetyr.com/css-selectors</a>
+  </p>
+	<p>
+    <a href="//www.w3schools.com/cssref/css_selectors.asp" target="_blank">http://www.w3schools.com/cssref/css_selectors.asp</a>
+  </p>
+</section>
+<section>
+  <h3>CSS Unit</h3>
+	<ul>
+		<li>absolute unit: in, cm, mm, pt, pc <img src="images/close.png" width="25" style="border: none; margin: 0;" alt="cross icon" /></li>
+    <li>relative unit: em, %<br>em: preference for font <img src="images/check.png" width="25" style="border: none; margin: 0;" alt="check icon" /></li>
+    <li>px magic unit <img src="images/check.png" width="25" style="border: none; margin: 0;" alt="check icon" /></li>
+    <li>new unit: vw, vh <img src="images/check.png" width="25" style="border: none; margin: 0;" alt="check icon" /> <img src="images/close.png" width="25" style="border: none; margin: 0;" alt="cross icon" /></li>
+	</ul>
+</section>
+
+<section>
+  <h3>CSS3 Selector</h3>
+  <img src="images/css_selector1.png" style="border: none;" alt="CSS3 selector table 1" />
+</section>
+
+<section>
+  <h3>CSS3 Selector</h3>
+  <img src="images/css_selector2.png" style="border: none;" alt="CSS3 selector table 2" />
+</section>
+
+<section>
+  <h3>CSS3 Selector</h3>
+  <img src="images/css_selector3.png" style="border: none;" alt="CSS3 selector table 3" />
+</section>
+<section>
+  <h3>CSS3 Prefix</h3>
+  <ul>
+    <li>-webkit- : chrome, safari
+    <li>-moz- : Gecko</li>
+    <li>-ms- : Microsoft (IE, Edge)</li>
+    <li>-o- : Opera</li>
+  </ul>
+</section>
+<section>
+  <h3>CSS3 New Properties</h3>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #EEE;
+    text-shadow: 1px 1px 8px #EEE;
+    transform: *function();
+        scale(); translate(); rotate(); skew();
+        translate3d(); rotate3d(); scale3d()
+
+    filter: *function();
+      blur(); brightness(); contrast(); gray-scale();
+      opacity(); invert(); saturate();
+  </code></pre>
+</section>
+<section>
+  <h3>CSS3 Gradient</h3>
+  <p>
+    <a href="//www.w3schools.com/css/css3_gradients.asp" target="_blank">http://www.w3schools.com/css/css3_gradients.asp</a>
+  </p>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    /*linear gradient: */
+    linear-gradient( to bottom, blue, red);
+    linear-gradient( 45deg, blue, red );
+    linear-gradient( 0deg, blue, green 40%, red );
+
+    /* radial gradient: */
+    radial-gradient( red, yellow, green );
+  </code></pre>
+</section>
+<section>
+  <h3>CSS3 Transition</h3>
+  <p>
+    <a href="//www.alsacreations.com/tuto/lire/878-transitions-css3-conclusion.html" target="_blank">
+      https://www.alsacreations.com/tuto/lire/878-transitions-css3-conclusion.html
+    </a>
+  </p>
+  <p>
+    Make a smooth transition between two values.
+  </p>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    /*linear gradient: */
+    linear-gradient( to bottom, blue, red);
+    linear-gradient( 45deg, blue, red );
+    linear-gradient( 0deg, blue, green 40%, red );
+
+    /* radial gradient: */
+    radial-gradient( red, yellow, green );
+  </code></pre>
+  <p><strong>TODO BEGIN App</strong></p>
+</section>
+
+<section>
+  <h3>CSS3 Animation</h3>
+  <p>
+    <a href="//www.w3schools.com/css/css3_animations.asp" target="_blank">
+      https://www.w3schools.com/css/css3_animations.asp
+    </a>
+  </p>
+  <p>
+    Make a set of property update in an accurate time
+  </p>
+  <pre><code class="hljs" data-trim contenteditable>
+    @keyframes dropHeader {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+      transform: translateY(0);
+      }
+    }
+
+    #main-header {
+      animation-name: dropHeader
+      animation-duration: 3.6s
+      animation-timing-function: ease-out
+      animation-delay: 0.6s
+      animation-iteration-count: 2;
+      animation-fill-mode: backwards || forwards
+    }
+
+    animation: cdropHeader 3.6s ease-out 0.6s backwards;
+  </code></pre>
+</section>
+
+<section>
+  <h3>CSS3 FlexBox</h3>
+  <p>
+    <a href="//css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+      https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    </a>
+  </p>
+  <p>
+    <a href="//la-cascade.io/flexbox-guide-complet/" target="_blank">
+      https://la-cascade.io/flexbox-guide-complet/
+    </a>
+  </p>
+
+  <p>
+    .parent
+    <blockquote>flex-direction, flex-wrap, justify-content, align-items, align-content</blockquote>
+  </p>
+  <p>
+    .child
+    <blockquote>order, flex-grow, flex-shrink, flex-basis, flex, align-self</blockquote>
+  </p>
+  <p><strong>TODO EXERCICE</strong></p>
+  <p><strong>TODO RESUME App</strong></p>
+</section>
+
+<section>
+  <h3>CSS3 MediaQueries</h3>
+  <p>
+    <a href="//jsfiddle.net/leaverou/Kk3p4/" target="_blank">
+      https://jsfiddle.net/leaverou/Kk3p4/
+    </a>
+  </p>
+  <p>
+    Mobile first : default behaviour for smartphone, media-queries for desktop
+  </p>
+  <pre><code class="css" data-trim contenteditable>
+    color : color management (in bits/pixel).
+    height : height display zone.
+    width : width display zone.
+    device-height
+    device-width
+    orientation : device orientation.
+    media : kind output screen. Some values :
+            screen : “classic” screen.
+            handheld : mobile device.
+            print : impression.
+            tv : television ;
+            projection : projector screen.
+            all : all kind of screen.
+  </code></pre>
+  <p><strong>TODO RESUME App</strong></p>
+</section>
+
+<section>
+  <h3>CSS3 Framework</h3>
+  <img src="images/css_framework.png" style="border: none;" alt="CSS3 Framework logo" />
+</section>
+
+<section>
+  <h3>CSS3 Grid</h3>
+  <p>
+    <a href="//v4-alpha.getbootstrap.com/layout/grid/" target="_blank">
+      Bootstrap Grid Doc
+    </a>
+  </p>
+  <img src="images/css_grid.png" style="border: none;" alt="CSS Grid system" />
+  <table>
+      <thead>
+          <th></th>
+          <th>Extra Small</th>
+          <th>Small</th>
+          <th>Medium</th>
+          <th>Large</th>
+          <th>Extra Large</th>
+      </thead>
+      <tbody>
+          <tr>
+              <td>dimension</td>
+              <td>&lt;576px</td>
+              <td>&gt;=576px</td>
+              <td>&gt;=768px</td>
+              <td>&gt;=992px</td>
+              <td>&gt;=1200px</td>
+          </tr>
+          <tr>
+              <td>class</td>
+              <td>.col-</td>
+              <td>.col-sm-</td>
+              <td>.col-md-</td>
+              <td>.col-lg-</td>
+              <td>.col-xl-</td>
+          </tr>
+      </tbody>
+  </table>
+</section>
+
+<section>
+  <h3>CSS3 Preprocessor</h3>
+  <img src="images/css_preprocessor.png" style="border: none;" alt="CSS3 Preprocessor logo" />
+</section>
+
+
+<section>
+  <h3>CSS3 future</h3>
+  <ul>
+    <li>Grid Layout</li>
+    <li>Variable</li>
+  </ul>
+</section>
