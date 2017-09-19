@@ -1,0 +1,114 @@
+.main {
+    display: flex;
+    
+    
+    /*
+    sort de l'ecran avec row tout seul : utiliser flex-wrap
+    row: affiche les élément sur une ligne 
+    row-reverse: possibilité d'inverser le sens de la ligne
+    
+    column écarte les élément on va voir çà dans une autre propriété
+    column: affiche en column
+    */
+    flex-direction: row;
+
+    /*
+    permet de mettre à la ligne les éléments
+    no-wrap par défaut === ne va jamais à ligne
+    wrap
+    wrap-reverse
+    */
+    flex-wrap: wrap;
+
+    /*
+    permet de grouper les deux proproiétés: flex-direction & flex-wrap
+    */
+    /*flex-flow:  row-reverse wrap*/
+
+    /*
+    permet de gérer l'espacement entre les éléments
+    c'est un peu bizzare il ne l'on pas préfixé flex
+    
+    center: element collé et centré
+    flex-start: les placé à l'oigine de l'élément qui a le display flex <--> collé à gauche
+
+    flex-end: reciproquement <--> collé à droite
+
+    space-around: met des espaces égaut entre chaque élément
+    space-beetween: <--> space-around mais pas d'espace sur les coté externe (padding)
+    */
+    justify-content: space-around;
+
+
+    /*
+    par défaut les élément enfant son étire sur la hauteur 
+    ainsi si on a une height définit les éléments seront complétement déformé
+    ex:
+    height: 600px 
+    */
+    /*height: 600px;*/
+
+    /*
+    stretch: valeur par défaut étire
+    flex-start: commence par placé sur la ligne du haut puis applique un écratement proportionnel sur la hauteur
+    flex-end: réciproque
+    center: écartement proportionnel padding compris
+
+    c'est align-content: qui permet de géré le positionnement des éléments les un par rapport aux autres
+    sorte de justify-content pour l'espace vertical
+    */
+    /*align-items: center;*/
+
+    /*
+    align-content gère alignement entre ligne d'élément
+    pas le placement global çà c'est le role de align-items décrit ci-dessus 
+    flex-start: élément aligné par rapport au haut
+    flex-end: reciproque
+    space-around: espacement proportionnel avec padding
+    space-between: espacement proportionnel sans padding
+    */
+    /*align-content: space-between;*/
+}
+
+.child:first-child {
+    /*
+    value to change child element position
+    */
+    /*order: 2 */
+
+    /*
+    permet de déterminé la taille d'un élément par rapport à l'autre
+    attention cela ne signifie que l'élément fera deux fois la tailler des autres
+    car c'est par rapport à l'espace restant comment il doitn s'agrandir
+    c'est un pourcentage de l'espace restant
+    attention car du coup il prend l'espace maximum cela impacte potentiellement
+    les propriétés: justify-content, align-items et align-content
+    */
+    /*flex-grow: 2*/
+
+    /*
+    lorsque l'on aura plus assez d'espace ce sera cette élément là qui sera retaillé
+    /*
+    /*flex-shrink: 2;*/
+
+    /*
+    définit cette fois-ci la largeur précisement de l'élément em, % ou px
+    quand flex-direction === row, flex-basis controle width.
+    mais quand flex-direction === column, flex-basis controle height.
+
+    la != avec c'est dernier c'est que c'est lui qui supplante widht et le height
+    mais qu'il peut etre interressant de definir la height et width en cas de non compatibilité des flex
+    toute en ayant un affichage plaisant.
+    et que le flex-shrink et flex-grow se baseront sur cette base
+    plutot qu'une interpolation en fonction de l'espacement quand cette propriété n'est pas présente
+    */
+    /*flex-basis: 300px*/
+
+    /* propriété flex:*/
+
+    /*https://developer.mozilla.org/fr/docs/Web/CSS/flex*/
+    /*flex: 1 1 0;*/
+
+    /*align-self: comme align-item mais pour un seul element comporte les même prorpéiét que align-items*/ 
+    
+}
