@@ -1,13 +1,51 @@
  <section>
     <h3>HTML5 Form</h3>
-    <p>
+    <!--<p>
       https://openclassrooms.com/courses/securisation-des-failles-csrf
 
       https://www.youtube.com/watch?v=A2-YImhNVMU
 
       https://www.w3schools.com/TAgs/att_form_enctype.asp
-    </p>
+    </p>-->
+  <pre><code class="hljs" data-trim contenteditable>
+    <form method="post" action="traitement.php">
+      <p>...</p>
+    </form>
+  </code></pre>
 </section>
+ <section>
+    <h3>HTML5 Input Text</h3>
+    <pre><code class="hljs" data-trim contenteditable>
+      <form method="post" action="traitement.php">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" minlength="5" placeholder="My username" autofocus/>
+      </form>
+    </code></pre>
+</section>
+
+ <section>
+    <h3>HTML5 Input type</h3>
+    <ul>
+      <li>password</li>
+      <li>email</li>
+      <li>submit</li>
+      <li>url</li>
+      <li>tel</li>
+      <li>number (min, max, step)</li>
+      <li>range (min, max, step)</li>
+      <li>color</li>
+      <li>date</li>
+      <li>search (only semantic no !=)</li>
+      <br>
+      <li>textarea (rows/cols => HTML| width/height => CSS)</li>
+      <br>
+      <li>checkbox (checked)</li>
+      <li>radio (==name, != value)</li>
+      <li>select (&lt; options	&gt; => != value, selected)</li>
+      <li>fieldset (regroup some input together), legend(give a name a this fieldset)</li>
+    </ul>
+</section>
+
  <section>
     <h3>HTML5 CSRF</h3>
 		<img src="images/csrf_schema1.png" style="border: none;" alt="CSRF schema attack" />
