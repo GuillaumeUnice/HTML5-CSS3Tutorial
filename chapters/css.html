@@ -1,0 +1,185 @@
+<section>
+  <h3>CSS3</h3>
+	<img src="images/css3_logo.png" style="border: none;" alt="CSS3 logo" />
+  <ul>
+    <li>Cascading Style Sheet</li>
+    <li>polyfill: <a href="//leaverou.github.io/prefixfree" target="_blank">Github</li>
+    <li>modernizr: <a href="//modernizr.com/" target="_blank">Modernizr</li>
+    <li>normalize: <a href="//necolas.github.io/normalize.css/" target="_blank">Normalize</a></li>
+    <br>
+    <li>css selector cheat sheet: <a href="//www.cheetyr.com/css-selectors" target="_blank">Cheat Sheet</a></li>
+  </ul>
+</section>
+<section>
+  <h3>CSS Unit</h3>
+  <ul>
+    <li>
+      1 in = cm = 25.4mm = 72pt = 6pc => unité absolue a proscrire pas réellement le cas sur les terminaux qui ne sont pas de très hautes résolution
+    </li>
+    <li>
+      De plus utiliser des unité absolue pose problème car selon que l’on soit sur un écran de terminal d’une station de travail ou d’un mobile on regarde pas à la même distance
+    </li>
+    <li>
+      unité relative : em relative à la police courante définir des padding et margin en fonction de la taille de la police courante est très appréciable
+    </li>
+    <li>
+      px est l’unité minimal de représentation d’affichage de l’écran donc pas la même selon les devices mais équivaut
+    </li>
+  </ul>
+  <p>
+    le reste relatif en %
+    <br>
+    nouvelle unité : vw and vh 1vh = 1/100 de la hauteur de l’écran donc 100 vh la totalité.
+    <br>
+    https://www.w3.org/Style/Examples/007/units.fr.html=
+  </p>
+</section>
+
+<section>
+  <h3>CSS3 Selector</h3>
+  <p>
+    Globalement est c’est dû à la grammaire CSS il est impossible de faire une sélection montante seulement descendante
+  </p>
+</section>
+
+<section>
+  <h3>CSS3 Prefix</h3>
+  <p>
+    version intermédiaire de browser
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+  <h3>CSS3 New Properties</h3>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #EEE;
+    text-shadow: 1px 1px 8px #EEE;
+    transform: *function();
+        scale(); translate(); rotate(); skew();
+        translate3d(); rotate3d(); scale3d()
+
+    filter: *function();
+      blur(); brightness(); contrast(); gray-scale();
+      opacity(); invert(); saturate();
+  </code></pre>
+</section>
+<section>
+  <h3>CSS3 Gradient</h3>
+  <p style="font-size: 0.7em">
+    linear-gradient ou radial-gradient, la premier valeur est l'orientation
+    <br>
+    puis les couleurs qui peuvent être complété d'un pourcentage d'espace d'étendu qu'il doive prendre
+    <br>
+    on peut préciser plusieurs couleur (l'interpolation se fera automatiquement)
+    <br><br>
+    Attention les anciens specifications de la direction du dégradé été "bottom" et non "to bottom"
+    <br>
+    L'orientation en degré s'éffectue selon la norme du W3C 180deg == to bottom de haut en bas et 90deg de gauche à droite == "to right"
+  </p>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    # Example
+    background-image: linear-gradient(to bottom,  rgb(195, 195, 195) 80%, rgb(221,221,221));
+  </code></pre>
+</section>
+
+<section>
+  <h3>CSS3 Transition</h3>
+  <p>transitions:</p>
+  <ul>
+    <li>ease: Rapide sur le début et ralenti sur la fin.</li>
+    <li>linear : La vitesse est constante sur toute la durée de l'animation.</li>
+    <li>ease-in : Lent sur le début et accélère de plus en plus vers la fin.</li>
+    <li>ease-out : Rapide sur le début et décèlere sur la fin.</li>
+    <li>ease-in-out : Le départ et la fin sont lents.</li>
+  </ul>
+  <pre><code class="hljs" data-trim contenteditable style="font-size: 1.5em; line-height: 150%;">
+    transition:
+        [transition-property]
+        [transition-duration]
+        [transition-timing-function]
+        [transition-delay];
+  </code></pre>
+</section>
+
+<section>
+  <h3>CSS3 Animation</h3>
+  <p>
+    https://www.alsacreations.com/tuto/lire/1299-TimingdesanimationsetdestransitionsenCSS3.html
+    <br>
+    backwards applique première state de l’annimation;
+    <br>
+    forwards applique dernière state de l'animation;
+  </p>
+</section>
+
+<section>
+  <h3>CSS3 FlexBox</h3>
+  <p>
+    EXERCICE: faire grille des series
+  </p>
+</section>
+
+<section>
+  <h3>CSS3 MediaQueries</h3>
+  <p>
+    https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/mise-en-page-adaptative-avec-les-media-queries
+    <br>
+    EXERCICE: faire un aside a coté la grille
+  </p>
+</section>
+
+<section>
+  <h3>CSS3 Framework</h3>
+  <ul>
+    <li><strong>Design: </strong>isomorphic apple design représentation fidèle de la réalité.</li>
+    <li><strong>Flat Design: </strong>Microsoft représentation épuré -> Microsoft Tiles</li>
+    <li><strong>Long Shadow: </strong>Ombre porté pour donner plus de contrast</li>
+    <li><strong>Material Design: </strong>Google flat design donc épuré avec notion de profondeur en plus couplé a un vrai travail sur le temps des animations mené par des ergonomes c’est l’un des rare a partir du point de vue des ergonome puis designer avant d’arriver aux devs</li>
+    <li><strong>Acrylic: </strong>Microsoft + “Opera neon” principe basé sur la transparence</li>
+  </ul>
+</section>
+
+<section>
+  <h3>CSS3 Preprocessor</h3>
+  <p>
+    <a href="http://blog.soat.fr/2014/07/preprocesseurs-css-less-vs-sass/" target="_blank">Sass vs. Less</a>
+  </p>
+</section>
+
+
+<section>
+  <h3>CSS3 future</h3>
+  <p>
+    Grid Layout est une nouvelle propriété qui permet donc justement de révolutionner la façon dont nous concevons les interfaces utilisateurs c’est basé sur un système de layout bi-dimensionnel
+    <br>
+    Néanmoins, nous en parlerons pas car c’est assez poussé et surtout toujours à l’état de draft et pas encore compatible avec les navigateurs.
+    <br>
+    https://la-cascade.io/css-grid-layout-guide-complet/
+    <br><br>
+    Les variables vont aussi faire leur apparition permettant de factoriser le code et ainsi pouvoir modifier la couleur de la charte graphique en modifiant une seul ligne de code. Globalement ce que l’on fait actuellement avec des pré-processeur CSS vont à termes être inclus de façon native.
+  </p>
+</section>
+
+<section>
+  <h3>Good Practice</h3>
+  <ul>
+    <li><strong>Prefix free: </strong>Simple scirpt a ajouté dans le but d'être dispensé de la génération des préfix (pas besoin si SASS &amp LESS)</li>
+    <li><strong>Normalize: </strong>Pour normalizer CSS sur l'ensemble des navigateur => rationnalise à faire en début de projet</li>
+    <li><strong>modernizr: </strong>Script permettant de savoir quelle fonctionnalité JS sont disponible par rapport au Browser du client => permet d'inclure certains polyfill le cas opportun</li>
+  </ul>
+</section>

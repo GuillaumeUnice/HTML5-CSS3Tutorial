@@ -1,0 +1,206 @@
+ <section>
+    <h3>History 1</h3>
+    <p>
+        Les travaux du web ont débuté en 1989 par Tim Berners-Lee un physicien au sein du CERN (Conseil Européen pour la recherche du nucléaire).
+        <br>
+        A cette époque l’ARPANET et le passage à Internet donc un réseau ouvert vener juste de débuter.
+        <br>
+        Son idée à été d’associé l’hypertexte à l’utilisation d’Internet.
+        <br>
+        Hypertexte : Ensemble de documents contenant des unités d’information lié entre elle par des hyperliens.
+    </p>
+ </section>
+ <section>
+    <h3>History 2</h3>
+    <p>
+        Ainsi il en découle que le web est un ensemble de technologie utilisable au sein d’internet.
+        <br>
+        Parmis ces technologies les plus fondamentales sont :
+        <br>
+        <strong>HTTP: </strong>modèle OSI c’est donc les dernières couches appelés représentation et application qui sont concernés avec la mise en place du protocole HTTP = HyperText Transfer Protocol
+        <br><br>
+        <strong>Adressage web: </strong>avec les URI = Uniform Resource Identifier
+        <br>
+        permettant d’identifier une resource au sein du réseau même si cette dernière est déplacé ou supprimé.
+        <br>
+        URL:  Uniform Resource Locator équivalent au “Where” ou ce situe la ressource “adresse”
+        <br>
+        URN:  Uniform Resource Name équivalent au “What” qu’est cette resource de quel type est elle exemple lorsque que l’on utilise un DTD pour caractérisé est soumettre notre XML a un ensemble de règle préétablie. #WebSémantique
+        <br><br>
+        =>La différence est subtile et ne rentre pas forcément dans le cadre de ce cours. Il existe d’ailleurs des norme
+        <br><br>
+        <strong>HTML: </strong>HyperText Markup Language => language de représentation d'une page web
+    </p>
+</section>
+
+ <section>
+    <h3>W3C 1</h3>
+    <p>
+       Aujourd’hui encore le W3C s’occupe du maintien et de l’évolution du Web.
+       <br>
+       C’est un consortium => ce titre juridique garantit une certaine liberté, il y a ma connaissance 3 grands sièges du W3C dont l’un à Sophia Antipolis ou le développement se poursuis.
+       <br>
+       Et il faut savoir qu’il y a environ une 100 aine d’entreprise qui peuvent prendre part aux décision mais chacun a une voit peu importe la taille de l’entreprise que ce soit Google ou une start up du moment qu’elle est apte à prendre une décision la voix est équivalente.
+    </p>
+</section>
+
+ <section>
+    <h3>W3C 2</h3>
+    <p>
+        Maintenant une chose à prendre en compte, c’est le fonctionnement très particulier du W3C :
+        <br>
+        draft-> recommendation
+        <br>
+        Le travail se poursuis car comme vous le savez on parle de web 2.0 qui n’est pas un terme technique dans le sens ou il ne fait pas écho à une technologie bien précise mais plutot une avancé sociale de l’utilisation du web.
+        <br>
+        En effet, le Web 1.0 peut être considéré comme un web utilisant uniquement du lien principe de lien hypertexte, ainsi une page est juste une page sur laquelle on lit des informations.
+        <br>
+        Tandis que le web 2.0 rend la page dynamique le client peut agir sur le contenu de la page, créant ainsi de l’intéractivité.
+    </p>
+</section>
+
+ <section>
+    <h3>W3C 3</h3>
+    <p>
+        Néanmoins, certains s’accorde pour dire que nous sommes en 2.5 et que le 3.0 pourrais arriver bien plus tot que prévu, malgré que la statuation et définition du 3.0 diffère.
+        <br>
+        Néanmoins, un point de vue récurrent consiste à dire que cette fois on chercher plus une page web en tant que tel mais véritablement une information ou encore que ce n’est plus le client qui va vers le web mais le web qui viens au client.
+        <br>
+        Ceci rendu possible notamment avec les service worker ou encore le web sémantique.
+        <br>
+        Ainsi les gros travaux du W3C porte sur le web sémantique, RDF, SPARQL(NO SQL représenrartion de sdonnées) basé sur un système d’ontologie de réprésenation des informations mais ceci sort du cadre de cette formation.
+    </p>
+    <p>
+        <a href="//validator.w3.org/" target="_blank">Validator W3C</a>
+    </p>
+</section>
+
+ <section>
+    <h3>HTTP Request 1</h3>
+    <p>
+        La version du protocole HTTP est précisée à la suite de l'URI.
+        <br>
+        On constate l'usage d'en-têtes inspirés de MIME pour transférer les méta-données:
+        <br>
+        <strong>Host: </strong>Permet de préciser le site web concerné par la requête, ce qui est nécessaire pour un serveur hébergeant plusieurs sites à la même adresse IP (name based virtual host, hôte virtuel basé sur le nom). C'est le seul en-tête réellement important.
+        <br>
+        <strong>Referer: </strong>Indique l'URI du document qui a donné un lien sur la ressource demandée. Cet en-tête permet aux webmasters d'observer d'où viennent les visiteurs.
+        <br>
+        <strong>User-Agent: </strong>Indique le logiciel utilisé pour se connecter. Il s'agit généralement d'un navigateur Web ou d'un robot d'indexation.
+    </p>
+</section>
+
+ <section>
+    <h3>HTTP Request 1</h3>
+    <p>
+        Dans le protocole HTTP, une <strong>methode</strong> est une <strong>commande</strong> spécifiant un type de requête, c'est-à-dire qu'elle demande au serveur d'effectuer une action.
+        <br>
+        En général l'action concerne une ressource identifiée par l'URL qui suit le nom de la méthode.
+        <br>
+    </p>
+    <ul>
+        <li>
+            <strong>GET: </strong>
+            C'est la méthode la plus courante pour demander une ressource. Une requête GET est sans effet sur la ressource, il doit être possible de répéter la requête sans effet.
+        </li>
+        <li>
+            <strong>HEAD:</strong>
+            Cette méthode ne demande que des informations sur la ressource, sans demander la ressource elle-même. juste le header permet de vérifier l’existence d’une ressource par exemple.
+        </li>
+        <li>
+            <strong>POST:</strong>
+            Cette méthode est utilisée pour transmettre des données en vue d'un traitement à une ressource (le plus souvent depuis un formulaire HTML).
+            <br>
+            L'URI fourni est l'URI d'une ressource à laquelle s'appliqueront les données envoyées.
+            <br>Le résultat peut être la création de nouvelles ressources ou la modification de ressources existantes.
+            <br>
+            À cause de la mauvaise implémentation des méthodes HTTP (pour Ajax) par certains navigateurs (et la norme HTML qui ne supporte que les méthodes GET et POST pour les formulaires),
+            <br>
+            cette méthode est souvent utilisée en remplacement de la requête PUT, qui devrait être utilisée pour la mise à jour de ressources.
+        </li>
+    </ul>
+</section>
+
+ <section>
+    <h3>HTTP Request 2</h3>
+    <ul>
+        <li>
+            <strong>OPTIONS: </strong>
+            Cette méthode permet d'obtenir les options de communication d'une ressource ou du serveur en général.
+        </li>
+        <li>
+            <strong>CONNECT:</strong>
+            Cette méthode permet d'utiliser un proxy comme un tunnel de communication.
+        </li>
+        <li>
+            <strong>TRACE:</strong>
+            Cette méthode demande au serveur de retourner ce qu'il a reçu, dans le but de tester et effectuer un diagnostic sur la connexion.
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <strong>PUT: </strong>
+            Cette méthode permet de remplacer ou d'ajouter une ressource sur le serveur. L'URI fourni est celui de la ressource en question.
+        </li>
+        <li>
+            <strong>PATCH:</strong>
+            Cette méthode permet, contrairement à PUT, de faire une modification partielle d'une ressource.
+        </li>
+        <li>
+            <strong>DELETE:</strong>
+            Cette méthode permet de supprimer une ressource du serveur.
+        </li>
+    </ul>
+    <p>Ces 3 dernières méthodes nécessitent généralement un accès privilégié.</p>
+</section>
+
+ <section>
+    <h3>HTTP Response</h3>
+    <p>
+        La première ligne donne le code de statut HTTP (200 dans ce cas).
+    </p>
+
+    <ul>
+        <li>
+            <strong>Date: </strong>
+            Moment auquel le message est généré.
+        </li>
+        <li>
+            <strong>Server:</strong>
+            Indique quel modèle de serveur HTTP répond à la requête.
+        </li>
+        <li>
+            <strong>Content-Type:</strong>
+            Indique le type MIME de la ressource. => encode de la ressource
+        </li>
+        <li>
+            <strong>Content-Length:</strong>
+            Indique la taille en octets de la ressource.
+        </li>
+        <li>
+            <strong>Expires:</strong>
+            Indique le moment après lequel la ressource devrait être considérée obsolète ; permet aux navigateurs Web de déterminer jusqu'à quand garder la ressource en mémoire cache.
+        </li>
+        <li>
+            <strong>Last-Modified:</strong>
+            Indique la date de dernière modification de la ressource demandée.
+        </li>
+    </ul>
+    </p>
+</section>
+
+ <section>
+    <h3>URI</h3>
+    <p>
+        Adressage web : avec les URI = Uniform Resource Identifier
+        <br>
+        permettant d’identifier une resource au sein du réseau même si cette dernière est déplacé ou supprimé.
+        <br>
+        <strong>URL: </strong>Uniform Resource Locator équivalent au “Where” ou ce situe la ressource “adresse”
+        <strong>URN: </strong>Uniform Resource Name équivalent au “What” qu’est cette resource de quel type est elle exemple lorsque que l’on utilise un DTD pour caractérisé est soumettre notre XML a un ensemble de règle préétablie. #WebSémantique
+    </p>
+    <p>
+        La différence est subtile et ne rentre pas forcément dans le cadre de ce cours. Il existe d’ailleurs des norme
+    </p>
+</section>
